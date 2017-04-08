@@ -1,0 +1,31 @@
+.widget {
+  background: $widget-bg;
+  margin-bottom: 2rem;
+  padding: 2em 1em;
+  color: white;
+}
+.widget-title {
+  font-size: 3rem;
+  margin-bottom: .5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.search-field {
+  border: 1px solid white;
+  background: #004966;
+  padding: .8em;
+  font-size: 1.6rem;
+  &:focus {
+    outline: none;
+  }
+  &::-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  &::-webkit-input-placeholder {
+    font-size: 1.5rem;
+  }
+  &[type=text] {
+    font-size: 1.5rem;
+    color: white;
+  }
+}

@@ -1,0 +1,53 @@
+html {
+  font: 10px 'roboto',sans-serif;
+}
+.bg-header {
+  background: $header-bg;
+}
+.bg-footer {
+  background: $footer-bg;
+}
+.header-main {
+  position: relative;
+  font-size: 1.8rem;
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 10;
+    @include respond-to(Medium-d){
+      display: block;
+      position: static;
+    }
+    li {
+      padding: 1em 4em;
+
+      @include respond-to(Medium-d){
+        padding: .6em 1em;
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: #ff4848;
+      }
+    }
+    .current-menu-item {
+      a {
+        color: #ff4848;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.header-menu-btn {
+  display: block;
+  background: url("/wp-content/themes/geekhub-exam/src/img/icon-menu.png") center no-repeat;
+  width: 32px;
+  border: none;
+  @include respond-to(Medium-d){
+    display: none;
+  }
+}

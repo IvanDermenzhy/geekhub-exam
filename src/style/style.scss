@@ -1,0 +1,23 @@
+/*!
+Theme Name: Geekhub6-exam-ivan
+Theme URI: http://underscores.me/
+Author: Ivan_D
+Author URI: http://underscores.me/
+Description: Exam geekhub
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: geekhub-exam
+Tags:
+*/
+@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css";
+@import "sass/mixin/_font.scss";
+@import "sass/base/_font.scss";
+@import "sass/base/_reset.scss";
+@import "sass/base/_variables.scss";
+@import "sass/mixin/_media.scss";
+@import "sass/layout/_header.scss";
+@import "sass/layout/_content.scss";
+@import "sass/layout/_widget";
+@import "sass/layout/_footer.scss";

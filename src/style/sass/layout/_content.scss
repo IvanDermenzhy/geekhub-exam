@@ -1,0 +1,213 @@
+.color-secondary {
+  color: $secondary-color;
+}
+.title-page {
+  position: relative;
+  background-color: rgba(0,0,0,.8);
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 30vh;
+  margin-bottom: 2rem;
+  h2 {
+    color: white;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    background: url("/wp-content/themes/geekhub-exam/src/img/bg-title-page.jpg") center no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
+.post-title {
+  font-size: 1.8rem;
+  padding: .5em;
+}
+.post-content {
+  font-size: 1.3rem;
+  p {
+    margin: 2em 0;
+    line-height: 1.5em;
+  }
+  h2 {
+    color: $secondary-color;
+  }
+}
+.img-single-post {
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+.wrapper-post-blog {
+  img {
+    width: 100%;
+  }
+}
+.site-content {
+  figure {
+    position: relative;
+    border: 1px solid #ccc;
+  }
+  figcaption {
+    padding: 2rem;
+    font-size: 1.4rem;
+    a {
+      width: 45px;
+      height: 45px;
+      background-image: url("/wp-content/themes/geekhub-exam/img/vector.png");
+      background-color: #fff;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #ff4848;
+      margin: 1rem 0;
+    }
+    p {
+      margin: 1rem 0;
+    }
+  }
+  .info-date {
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      left: 30%;
+      top: .5em;
+      background: url("/wp-content/themes/geekhub-exam/img/clock.png") center no-repeat;
+    }
+  }
+}
+.page-numbers {
+  padding: 1rem;
+  background: #ff4848;
+  color: white;
+}
+.clients {
+  position: relative;
+  padding: 5vh 0;
+  background: #ff4848;
+}
+.why-us-section {
+  background: #ff4848;
+  height: 80vh;
+  color: white;
+  position: relative;
+  >.container {
+    height: 100%;
+  }
+  h2 {
+    font-size: 6rem;
+    margin-bottom: .2em;
+  }
+  .who-we-are {
+    font-size: 4.8rem;
+  }
+  p {
+    font-size: 2.4rem;
+    margin-bottom: .5em;
+  }
+  &:before {
+    display: none;
+    @include respond-to (Medium-d) {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url("/wp-content/themes/geekhub-exam/img/decoration-section.png") center no-repeat;
+      width: 448px;
+      height: 527px;
+      top: 50%;
+      right: 60%;
+      transform: translateY(-50%);
+    }
+  }
+}
+.welcome-here {
+  height: 80vh;
+  font-size: 1.8rem;
+  color: #004966;
+  position: relative;
+  >.container {
+    height: 100%;
+  }
+  .hello-section {
+    h2 {
+      padding: 3rem 0;
+      font-size: 4.8rem;
+    }
+    p {
+      line-height: 2rem;
+    }
+    a {
+      color: #ff4848;
+    }
+
+  }
+  &:after {
+    display: none;
+    @include respond-to (Medium-d){
+      content: '';
+      display: block;
+      position: absolute;
+      background: url("/wp-content/themes/geekhub-exam/img/decoration-man.png") center no-repeat;
+      width: 338px;
+      height: 511px;
+      bottom: 0;
+      left: 20%;
+    }
+  }
+}
+.offers {
+  background: #004966;
+  font-size: 1.8rem;
+  color: white;
+  padding: 15vh 0;
+  h2 {
+    font-size: 4.8rem;
+    margin-bottom: 2rem;
+  }
+  p {
+    line-height: 2rem;
+  }
+  .description-section-offers {
+    margin-bottom: 10vh;
+  }
+  .img-service {
+    margin-bottom: 3rem;
+  }
+}
+.contact-form {
+    position: relative;
+    background-color: rgba(0,0,0,.8);
+    -webkit-background-size: cover;
+    background-size: cover;
+    margin-bottom: 2rem;
+  color: white;
+    h2 {
+      color: white;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      background: url("/wp-content/themes/geekhub-exam/src/img/image.png") center no-repeat;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+}
+.site-footer {
+  font-size: 1.8rem;
+  color: white;
+}
